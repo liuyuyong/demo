@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+/**
+ * @author liu
+ */
 @FeignClient(value = "service-hi", fallback = FeignServiceHystric.class)
 public interface FeignService {
 
